@@ -156,8 +156,13 @@ body.js-ready .reveal-left {
 .exp-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--accent2); font-size: 0.7rem; top: 0.05rem; }
 .award-inline {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  background: rgba(123,94,167,0.12); border: 1px solid rgba(123,94,167,0.3);
-  padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.7rem; color: #b89ad4; margin-top: 0.8rem;
+  background: rgba(123,94,167,0.12); border: 1px solid rgba(123,94,167,0.4);
+  padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.7rem;
+  color: var(--accent2); margin-top: 0.8rem;
+}
+[data-theme="light"] .award-inline {
+  background: rgba(82,51,160,0.08); border-color: rgba(82,51,160,0.35);
+  color: #3d1f8a;
 }
 
 /* ── SKILLS ── */
@@ -199,6 +204,7 @@ body.js-ready .reveal-left {
 .project-desc { font-size: 0.75rem; color: var(--soft); line-height: 1.6; }
 .project-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
 .stack-tag { font-size: 0.62rem; background: rgba(123,94,167,0.1); border: 1px solid rgba(123,94,167,0.25); color: #b89ad4; padding: 0.15rem 0.5rem; border-radius: 3px; letter-spacing: 0.05em; }
+[data-theme="light"] .stack-tag { background: rgba(82,51,160,0.08); border-color: rgba(82,51,160,0.3); color: #4a2090; }
 
 /* ── EDUCATION ── */
 .edu-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: start; transition: background 0.3s; }
