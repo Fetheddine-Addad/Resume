@@ -15,14 +15,14 @@
 :root[data-theme="light"] {
   --bg:      #f4f4f8;
   --surface: #ffffff;
-  --border:  #dcdce8;
-  --accent:  #009e7d;
-  --accent2: #6244a0;
-  --text:    #111118;
-  --muted:   #888899;
-  --tag-bg:  #ebebf4;
-  --soft:    #555570;
-  --nav-bg:  rgba(244,244,248,0.92);
+  --border:  #d0d0e0;
+  --accent:  #007d63;
+  --accent2: #5233a0;
+  --text:    #0a0a14;
+  --muted:   #555566;
+  --tag-bg:  #e8e8f2;
+  --soft:    #2a2a40;
+  --nav-bg:  rgba(244,244,248,0.95);
 }
 
 /* ── RESET ── */
