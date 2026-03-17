@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,12 +33,17 @@
 <nav>
   <div class="container">
     <div class="nav-inner">
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#awards">Awards</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
+      <div class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#awards">Awards</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">☀️</span>
+      </button>
     </div>
   </div>
 </nav>
@@ -46,7 +51,6 @@
 <section id="experience">
   <div class="container">
     <div class="section-header"><span class="section-num">01</span><h2>Experience</h2></div>
-
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Nov 2024 — Present</div>
@@ -64,7 +68,6 @@
         <div class="award-inline">⭐ Shiny Star Award — outstanding performance within 6 months</div>
       </div>
     </div>
-
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Feb 2024 — Mar 2024</div>
@@ -78,7 +81,6 @@
         </ul>
       </div>
     </div>
-
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Nov 2023 — Oct 2024</div>
@@ -91,7 +93,6 @@
         </ul>
       </div>
     </div>
-
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Sep 2023 — Jun 2024</div>
@@ -111,30 +112,12 @@
   <div class="container">
     <div class="section-header"><span class="section-num">02</span><h2>Skills</h2></div>
     <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="skill-category">Cloud Platforms</div>
-        <div class="tags"><span class="tag">Huawei Cloud Stack</span><span class="tag">Huawei Cloud</span><span class="tag">GCP</span><span class="tag">Azure</span><span class="tag">AWS</span></div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-category">Infrastructure & DevOps</div>
-        <div class="tags"><span class="tag">Terraform</span><span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Storage</span><span class="tag">Networking</span></div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-category">Programming & AI/ML</div>
-        <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Java</span><span class="tag">C</span><span class="tag">TensorFlow</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span></div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-category">Big Data & Databases</div>
-        <div class="tags"><span class="tag">Spark</span><span class="tag">Hive</span><span class="tag">Snowflake</span><span class="tag">Airflow</span><span class="tag">Hadoop</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span></div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-category">Frameworks & Tools</div>
-        <div class="tags"><span class="tag">Django</span><span class="tag">Django REST</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Git</span><span class="tag">GitHub</span></div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-category">Soft Skills</div>
-        <div class="tags"><span class="tag">Problem-Solving</span><span class="tag">Team Collaboration</span><span class="tag">Communication</span><span class="tag">Fast Learning</span><span class="tag">Adaptability</span></div>
-      </div>
+      <div class="skill-card reveal"><div class="skill-category">Cloud Platforms</div><div class="tags"><span class="tag">Huawei Cloud Stack</span><span class="tag">Huawei Cloud</span><span class="tag">GCP</span><span class="tag">Azure</span><span class="tag">AWS</span></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Infrastructure & DevOps</div><div class="tags"><span class="tag">Terraform</span><span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Storage</span><span class="tag">Networking</span></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Programming & AI/ML</div><div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Java</span><span class="tag">C</span><span class="tag">TensorFlow</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Big Data & Databases</div><div class="tags"><span class="tag">Spark</span><span class="tag">Hive</span><span class="tag">Snowflake</span><span class="tag">Airflow</span><span class="tag">Hadoop</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Frameworks & Tools</div><div class="tags"><span class="tag">Django</span><span class="tag">Django REST</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Git</span><span class="tag">GitHub</span></div></div>
+      <div class="skill-card reveal"><div class="skill-category">Soft Skills</div><div class="tags"><span class="tag">Problem-Solving</span><span class="tag">Team Collaboration</span><span class="tag">Communication</span><span class="tag">Fast Learning</span><span class="tag">Adaptability</span></div></div>
     </div>
   </div>
 </section>
@@ -208,7 +191,6 @@
       <div class="edu-period">Sep 2021 – Jun 2024</div>
       <div class="edu-note">Built a strong foundation in core computer science principles; ranked among the top students in the program.</div>
     </div>
-
     <div class="section-header" style="margin-top:3.5rem;margin-bottom:1.5rem;">
       <span class="section-num">07</span><h2>Languages</h2>
     </div>
